@@ -153,7 +153,7 @@ pub fn set_success(ui_weak: &Weak<AppWindow>, msg: &str) {
 #[cfg(target_os = "xous")]
 fn select_backup_dir() -> Result<Option<(String, slint_keyos_platform::fs::Location)>, String> {
     use slint_keyos_platform::{
-        gui_server_api::navigation::filepicker::{AllowedLocations, Location, SelectFileOptions},
+        gui_server_api::navigation::filepicker::{AllowedLocations, SelectFileOptions},
         navigation::select_file,
     };
 
@@ -176,7 +176,7 @@ fn select_backup_dir() -> Result<Option<(String, slint_keyos_platform::fs::Locat
 fn select_backup_file() -> Result<Option<(String, slint_keyos_platform::fs::Location)>, String> {
     use slint_keyos_platform::{
         gui_server_api::navigation::filepicker::{
-            AllowedExtensions, AllowedLocations, Location, SelectFileOptions,
+            AllowedExtensions, AllowedLocations, SelectFileOptions,
         },
         navigation::select_file,
     };

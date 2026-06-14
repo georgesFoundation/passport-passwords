@@ -54,7 +54,6 @@ en = "Passwords"
 "os/usbdev" = [
     "IsDeviceEmulationEnabled",
     "ReadEndpoint",
-    "RegisterCapability",
     "RegisterInterface",
     "ResetController",
     "SetEndpointStalled",

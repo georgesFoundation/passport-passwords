@@ -120,43 +120,6 @@ fn serve_blocking(engine: Arc<Engine<Keystore>>) -> anyhow::Result<()> {
     crate::transport::set_status("WebUSB: init");
     let mut usb = UsbDeviceEmulation::default();
 
-    // WebUSB Platform Capability descriptor.
-    // UUID per https://wicg.github.io/webusb/#webusb-platform-capability-descriptor.
-    if let Err(e) = usb.register_capability(
-        16, // bDescriptorType: DEVICE CAPABILITY
-        5,  // bDevCapabilityType: PLATFORM
-        uuid::uuid!("3408b638-09a9-47a0-8bfd-a0768815b665"),
-        &[
-            0x00,
-            0x01, // bcdVersion: 1.00
-            WEBUSB_VENDOR_CODE,
-            0x00, // iLandingPage: 0 (none)
-        ],
-    ) {
-        let msg = format!("WebUSB: register WebUSB capability failed: {e:?}");
-        log::warn!("{msg}");
-        crate::transport::set_status(msg);
-        std::thread::park();
-        return Ok(());
-    }
-
-    // Microsoft OS 2.0 Platform Capability descriptor. Same payload shape
-    // nostr-signer 1.3 uses; the descriptor *set* behind the vendor code
-    // is a follow-up (Windows auto-bind to WinUSB). On macOS / Linux this
-    // is inert.
-    if let Err(e) = usb.register_capability(
-        16,
-        5,
-        uuid::uuid!("d8dd60df-4589-4cc7-9cd2-659d9e648a9f"),
-        &[0x00, 0x00, 0x03, 0x06, 0xb2, 0x00, 0x77, 0x00],
-    ) {
-        let msg = format!("WebUSB: register MS OS 2.0 capability failed: {e:?}");
-        log::warn!("{msg}");
-        crate::transport::set_status(msg);
-        std::thread::park();
-        return Ok(());
-    }
-
     crate::transport::set_status("WebUSB: registering interface");
     let (_webusb_interface, [mut ep_in, ep_out]) = match usb.register_interface(
         UsbInterfaceConfig::new(
@@ -165,6 +128,29 @@ fn serve_blocking(engine: Arc<Engine<Keystore>>) -> anyhow::Result<()> {
             WEBUSB_IFCE_SUBCLASS,
             WEBUSB_IFCE_PROTOCOL,
             &WEBUSB_ENDPOINTS,
+        )
+        // WebUSB Platform Capability descriptor.
+        // UUID per https://wicg.github.io/webusb/#webusb-platform-capability-descriptor.
+        .with_capability(
+            16, // bDescriptorType: DEVICE CAPABILITY
+            5,  // bDevCapabilityType: PLATFORM
+            uuid::uuid!("3408b638-09a9-47a0-8bfd-a0768815b665"),
+            &[
+                0x00,
+                0x01, // bcdVersion: 1.00
+                WEBUSB_VENDOR_CODE,
+                0x00, // iLandingPage: 0 (none)
+            ],
+        )
+        // Microsoft OS 2.0 Platform Capability descriptor. Same payload shape
+        // nostr-signer 1.3 uses; the descriptor *set* behind the vendor code
+        // is a follow-up (Windows auto-bind to WinUSB). On macOS / Linux this
+        // is inert.
+        .with_capability(
+            16,
+            5,
+            uuid::uuid!("d8dd60df-4589-4cc7-9cd2-659d9e648a9f"),
+            &[0x00, 0x00, 0x03, 0x06, 0xb2, 0x00, 0x77, 0x00],
         )
         .with_setup_responder(Some(SetupResponder)),
     ) {
