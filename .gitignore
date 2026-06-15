@@ -7,3 +7,4 @@
 ui/gen/
 # Extension scratch
 *.zip
+/.envrc
