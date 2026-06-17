@@ -11,19 +11,19 @@ license = "GPL-3.0-or-later"
 [workspace]
 
 [patch.crates-io]
-getrandom = { path = "../KeyOS-dev2/imports/getrandom" }
+getrandom = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
 
 [dependencies]
 # KeyOS plumbing
 log = "0.4"
-log-server = { package = "xous-api-log", path = "../KeyOS-dev2/xous/api/log" }
-security = { path = "../KeyOS-dev2/api/security" }
+log-server = { package = "xous-api-log", git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
+security = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
 serde = { version = "1", features = ["derive"] }
-server = { path = "../KeyOS-dev2/server" }
-slint-keyos-platform = { path = "../KeyOS-dev2/slint-keyos-platform/runtime" }
-usb = { path = "../KeyOS-dev2/api/usb" }
-file-backed = { path = "../KeyOS-dev2/utils/file-backed" }
-fs = { path = "../KeyOS-dev2/api/fs" }
+server = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
+slint-keyos-platform = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
+usb = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
+file-backed = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
+fs = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
 
 # Cross-target utilities
 async-trait = "0.1"
@@ -55,10 +55,10 @@ futures-util = { version = "0.3", default-features = false, features = ["std", "
 dirs = "5"
 
 [target.'cfg(target_os = "xous")'.dependencies]
-xous = { path = "../KeyOS-dev2/xous/xous-rs" }
+xous = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
 
 [build-dependencies]
-slint-keyos-platform-build = { path = "../KeyOS-dev2/slint-keyos-platform/build" }
+slint-keyos-platform-build = { git = "ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git", rev = "c26c80a1b77553cebad0bd71cd4c4af0289b4a1c" }
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(keyos)'] }

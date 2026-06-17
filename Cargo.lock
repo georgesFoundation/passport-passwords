@@ -132,6 +132,7 @@ checksum = "7f202df86484c868dbad7eaa557ef785d5c66295e41b460ef922eca0723b842c"
 [[package]]
 name = "app-manifest"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "cargo_metadata",
  "hex",
@@ -146,6 +147,7 @@ dependencies = [
 [[package]]
 name = "armv7"
 version = "0.2.1"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "tock-registers",
 ]
@@ -302,6 +304,7 @@ checksum = "1505bd5d3d116872e7271a6d4e16d81d0c8570876c8de68093a09ac269d8aac0"
 [[package]]
 name = "atsama5d27"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "armv7",
  "bitfield",
@@ -970,6 +973,7 @@ checksum = "d0a5c400df2834b80a4c3327b3aad3a4c4cd4de0629063962b03235697506a28"
 [[package]]
 name = "crypto"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "log",
  "num-derive",
@@ -1083,6 +1087,7 @@ checksum = "be1e0bca6c3637f992fc1cc7cbc52a78c1ef6db076dbf1059c4323d6a2048376"
 [[package]]
 name = "defer"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 
 [[package]]
 name = "derive_more"
@@ -1235,6 +1240,7 @@ dependencies = [
 [[package]]
 name = "ehci"
 version = "0.1.1"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "bitfield",
  "log",
@@ -1364,6 +1370,7 @@ checksum = "28dea519a9695b9977216879a3ebfddf92f1c08c05d984f8996aecd6ecdc811d"
 [[package]]
 name = "fiat-symbols"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 
 [[package]]
 name = "field-offset"
@@ -1378,6 +1385,7 @@ dependencies = [
 [[package]]
 name = "file-backed"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "fs",
  "log",
@@ -1547,6 +1555,7 @@ dependencies = [
 [[package]]
 name = "fs"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "bitflags 2.13.0",
  "log",
@@ -1672,6 +1681,7 @@ dependencies = [
 [[package]]
 name = "getrandom"
 version = "0.2.10"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "cfg-if",
  "libc",
@@ -1848,6 +1858,7 @@ dependencies = [
 [[package]]
 name = "gui-server-api"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "app-manifest",
  "hex-literal",
@@ -2196,6 +2207,7 @@ dependencies = [
 [[package]]
 name = "i18n"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "chrono",
  "chrono-tz",
@@ -3019,6 +3031,7 @@ dependencies = [
 [[package]]
 name = "keyos"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 
 [[package]]
 name = "khronos_api"
@@ -4758,6 +4771,7 @@ checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 [[package]]
 name = "security"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "bip39",
  "crypto",
@@ -4856,6 +4870,7 @@ dependencies = [
 [[package]]
 name = "server"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "defer",
  "log",
@@ -4871,6 +4886,7 @@ dependencies = [
 [[package]]
 name = "server-macro"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "app-manifest",
  "proc-macro2",
@@ -4881,6 +4897,7 @@ dependencies = [
 [[package]]
 name = "settings"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "fs",
  "jiff",
@@ -5056,6 +5073,7 @@ dependencies = [
 [[package]]
 name = "slint-keyos-platform"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "async-task",
  "euclid",
@@ -5100,6 +5118,7 @@ dependencies = [
 [[package]]
 name = "slint-keyos-platform-build"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "anyhow",
  "euclid",
@@ -5127,6 +5146,7 @@ dependencies = [
 [[package]]
 name = "slint-keyos-platform-common"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "i-slint-compiler",
  "rkyv",
@@ -5136,6 +5156,7 @@ dependencies = [
 [[package]]
 name = "slint-keyos-platform-macros"
 version = "0.1.1"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "darling",
  "proc-macro2",
@@ -5308,6 +5329,7 @@ checksum = "b7401a30af6cb5818bb64852270bb722533397edcfc7344954a38f420819ece2"
 [[package]]
 name = "svd2utra"
 version = "0.1.15"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "convert_case 0.4.0",
  "quick-xml",
@@ -5910,6 +5932,7 @@ dependencies = [
 [[package]]
 name = "usb"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "atsama5d27",
  "ehci",
@@ -5996,6 +6019,7 @@ checksum = "b6c140620e7ffbb22c2dee59cafe6084a59b5ffc27a8859a5f0d494b5d52b6be"
 [[package]]
 name = "utralib"
 version = "0.1.17"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "svd2utra",
 ]
@@ -6252,6 +6276,7 @@ checksum = "a28ac98ddc8b9274cb41bb4d9d4d5c425b6020c50c46f25559911905610b4a88"
 [[package]]
 name = "whence"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 
 [[package]]
 name = "win-sys"
@@ -6848,6 +6873,7 @@ dependencies = [
 [[package]]
 name = "worker"
 version = "0.1.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "async-channel",
  "async-task",
@@ -6950,6 +6976,7 @@ checksum = "ec7a2a501ed189703dba8b08142f057e887dfc4b2cc4db2d343ac6376ba3e0b9"
 [[package]]
 name = "xous"
 version = "0.11.0"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "keyos",
  "libc",
@@ -6958,6 +6985,7 @@ dependencies = [
 [[package]]
 name = "xous-api-log"
 version = "0.1.28"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "log",
  "num-derive",
@@ -6971,6 +6999,7 @@ dependencies = [
 [[package]]
 name = "xous-api-names"
 version = "0.9.30"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "log",
  "num-derive",
@@ -6982,6 +7011,7 @@ dependencies = [
 [[package]]
 name = "xous-api-ticktimer"
 version = "0.9.28"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "log",
  "num-derive",
@@ -6994,6 +7024,7 @@ dependencies = [
 [[package]]
 name = "xous-ipc"
 version = "0.9.33"
+source = "git+ssh://git@github.com/Foundation-Devices/KeyOS-Dev.git?rev=c26c80a1b77553cebad0bd71cd4c4af0289b4a1c#c26c80a1b77553cebad0bd71cd4c4af0289b4a1c"
 dependencies = [
  "bitflags 1.3.2",
  "rkyv",
